@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview with AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="setup">
+        <h1>Interview Setup</h1>
+        <form id="setupForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="position">Position:</label>
+                <select id="position" required>
+                    <option value="Product Manager">Product Manager</option>
+                    <option value="Java Engineer">Java Engineer</option>
+                    <option value="Test Engineer">Test Engineer</option>
+                </select>
+            </div>
+            <div>
+                <label for="inviteCode">Invite Code:</label>
+                <input type="text" id="inviteCode" required>
+            </div>
+            <button type="submit">Start Interview</button>
+        </form>
+        <p id="error" style="color: red;"></p>
+    </div>
+    
+    <div class="container" id="interview" style="display: none;">
+        <h1>Interview with AI</h1>
+        <div id="timer">00:00</div>
+        <button id="speakButton" disabled>Speak</button>
+        <button id="interruptButton" style="display: none;">Interrupt AI</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#error {
+    margin-top: 10px;
+    color: red;
+}
+
+#timer {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#speakButton {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: not-allowed;
+}
+
+#speakButton.active {
+    background-color: green;
+    cursor: pointer;
+}
+
+#interruptButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
